@@ -8,8 +8,8 @@
     
 }
 p {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 30px;
 }
 a {
     text-decoration: none;
@@ -35,6 +35,9 @@ header {
     justify-content: space-between;
     padding: 2rem 4rem;
     height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color:white;
 }
 ul {
     display: flex;
@@ -66,6 +69,9 @@ ul {
         justify-content: space-between;
         padding: 2rem;
         height: 100vh;
+        position: relative;
+       
+        background-color:white;
     }
     ul {
         display: flex;
@@ -104,9 +110,9 @@ ul {
     padding: 2rem 4rem;
 }
 .hero-img {
-    width: 400px;
-    height: 400px;
-   margin-bottom: -33px;
+    width: 600px;
+    height: 590px;
+   margin-bottom: px;
 }
 
 .hero-img img {
@@ -117,8 +123,9 @@ ul {
 }
 
 .hero-section h1 {
-    font-size: 50px;
+    font-size: 80px;
     padding-bottom: 10px;
+    line-height: 80px;
 }
 .hero-textArea {
     width: 520px;
@@ -158,8 +165,9 @@ ul {
     }
     
     .hero-section h1 {
-        font-size: 30px;
+        font-size: 50px;
         padding-bottom: 10px;
+        line-height: 60px;
     }
     .hero-textArea {
         width: 320px;
@@ -191,12 +199,12 @@ ul {
 
 .funiture-haven-container{
     position: relative;
-    height: 500px;
+    height: 700px;
 
 }
 .funiture-haven1 {
-    width: 380px;
-    height: 376px;
+    width: 400px;
+    height: 396px;
     background-color: burlywood;
    
 }
@@ -204,8 +212,8 @@ ul {
     position: absolute;
     top: 4rem;
     left: 5.8rem;
-    width: 400px;
-    height: 300px;
+    width: 480px;
+    height: 400px;
 }
 .funiture-haven-img img{
     width: 100%;
@@ -221,17 +229,22 @@ ul {
     padding: 2rem;
 }
 .simple-container h2{
-    padding: 0 0 10px 40px;
+    padding: 0 0 10px 30px;
+    font-size: 30px;
 }
 .simple-container p {
-    width: 200px;
+    width: 300px;
 }
 
 .funiture-haven-textArea {
     background-color: burlywood;
-    padding: 4rem 2rem;
+    padding: 5rem 2rem 7rem 2rem;
     color: white;
     margin-top: -130px;
+}
+.funiture-haven-textArea h2{
+    font-size: 50px;
+    padding:0 0 1rem 0;
 }
 
 
@@ -283,6 +296,7 @@ ul {
     }
     .simple-container p {
         font-size: 13px;
+        width: 200px;
     }
     .funiture-haven-textArea {
         background-color: burlywood;
@@ -290,6 +304,10 @@ ul {
         color: white;
         align-self: center;
     }
+    .funiture-haven-textArea h2{
+        font-size: 30px;
+    }
+    
     
 }
 
@@ -304,6 +322,7 @@ ul {
     padding: 4rem;
     background-color: rgba(234, 199, 234, 0.459);
 }
+
 .new-collection-section hr{
     width: 100px;
     margin: 20px 0;
@@ -341,7 +360,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 4rem;
+    padding: 2rem;
 }
 .nature-collection-section h2 {
     color:rgba(0, 0, 0, 0.359);
@@ -414,18 +433,19 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     padding: 4rem;
 }
 .modern-interior-section p{
-    width: 300px;
+    width: 400px;
     padding-top: 20px;
 }
 .modern-interior-section h2{
-    font-size: 35px;
+    font-size: 45px;
 }
 .modern-img-container {
-    width: 300px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     background-color: burlywood;
     position: relative;
 }
@@ -434,7 +454,7 @@ ul {
     position: absolute;
     right: 2rem;
     top: 2rem;
-    width: 370px;
+    width: 430px;
 }
 
 .modern-img1 img{
@@ -528,7 +548,7 @@ ul {
 /* IMAGE ONLY RESPONSIVE */ 
 @media (max-width: 768px) {
     .image-only-section {
-        width: 380px;
+        width: 100vw;
         padding: 2rem;
     }
     

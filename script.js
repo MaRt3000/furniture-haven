@@ -1,4 +1,8 @@
-const menu = document.querySelector(".menu");
-const nav = document.querySelector("nav");
-const navLinks = document.querySelectorAll(".nav_link");
+const menuBtn = document.getElementById('menu');
+const sideMenu = document.getElementById('nav');
 
+
+    menuBtn.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+    });
+    

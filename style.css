@@ -341,7 +341,6 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    column-gap: 20px;
     padding: 4rem;
 }
 .nature-collection-section h2 {
@@ -415,7 +414,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
     padding: 4rem;
 }
 .modern-interior-section p{

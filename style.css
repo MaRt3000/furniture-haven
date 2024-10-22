@@ -23,12 +23,13 @@ a:hover {
 button:hover {
     cursor: pointer;
 }
-.menu {
+.menu-btn {
     font-size: 24px;
     background: none;
     border: none;
     color: #000;
     cursor: pointer;
+    display: block;
 }
 
 /* HEADER SECTION */
@@ -50,7 +51,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+    margin-top: 0rem;
 
 }
 nav ul{
@@ -82,15 +83,50 @@ ul {
 
 /* HEADER MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+    .menu-btn{
+        display: block;
+        margin-top: -1.3rem;
+    }
+    .side-menu {
+        position: fixed;
+        left:0;
+        top: 0;
+        top: -150%; /* Start off-screen */
+        width: 120px;
+        height: 50%;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px rgba(234, 199, 234, 0.459), -1px -1px 1px rgba(234, 199, 234, 0.459);
+        transition: top 0.6s ease;
+        /* padding-bottom: 20px; */
+        /* align-items: center; */
+    }
+    .side-menu.active {
+        left: 0;
+        top: 52px;
+    }
+    .side-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .side-menu ul li {
+        padding: 15px;
+        border-bottom: 1px solid rgba(234, 199, 234, 0.459);
+    
+    }
+    
+    .side-menu ul li a {
+        color: #000;
+        text-decoration: none;
+    }
+    
 
     header {
         display: flex;
         align-items: start;
         justify-content: space-between;
         padding: 2rem;
-        height: 100vh;
-        position: relative;
-       
+        height: 10vh;
         background-color:white;
     }
     ul {
@@ -102,6 +138,7 @@ ul {
         gap: 2rem;
         padding-top: 9rem;
         font-size: 20px;
+        
     }
     
     
@@ -116,7 +153,13 @@ ul {
         object-position: center;
     }
 
-
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    
+    }
 }
 
 
@@ -164,6 +207,8 @@ ul {
 
 /* HERO MOBILE RESPONSIVE */
 @media (max-width: 768px) {
+
+   
     .hero-section {
         display: flex;
         flex-direction: column;
